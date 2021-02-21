@@ -39,7 +39,7 @@ has_food = False
 
 ### utils
 
-# when game over, we write game over on the screen
+# when game over, we write game over on the screen and display the score
 def game_over(score, launched):
     pygame.display.set_mode((840, 690))
     arial_font = pygame.font.SysFont("arial", 50) #font and size
