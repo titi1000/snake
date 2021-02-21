@@ -1,15 +1,13 @@
-# Jeu Snake en Python
+# Snake game in Python
 
-Petit jeu Snake développé en Python, à l'aide de la librairie Pygame.
+A Snake game coded in Python. I used the library Pygame.
 
-#### Contient :
-- Un système d'affichage du score 
-- Possibilité de faire pause et de reprendre
+#### Contains :
+- A score display system 
+- Possibility to pause and resume the game
 
-#### Images du jeu :
+#### Game images :
 
 <img src="images/snake.png">
 
 <img src="images/gameover.png">
-
-// https://dillinger.io/

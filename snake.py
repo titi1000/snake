@@ -129,13 +129,12 @@ def self_touch(snake, head, direction):
     if len(snake) == 1:
         return snake, launched
     snake_temp.pop(len(snake_temp)-1)
-    #head[0] >= block[0] + 10 and head[0] <= block[0] - 10 or head[1] >= block[1] + 10 and head[1] >= block[1] - 10
     for block in snake_temp:
         if head[1] == block[1] and head[0] == block[0]:
             launched = game_over(len(snake_temp)-1, True)
     return snake, launched
 
-# lauch the game
+# launch the game
 def game(launched, snake, direction, has_food):
     # main boucle
     while launched:
@@ -165,7 +164,6 @@ def game(launched, snake, direction, has_food):
                             if paused_event.type == pygame.KEYDOWN and paused_event.key == pygame.K_SPACE:
                                 paused = False
 
-        #draw_score(len(snake))
         draw_snake(snake)
         score_text, text_rect = draw_score(len(snake)-1)
         screen.blit(score_text, text_rect)
